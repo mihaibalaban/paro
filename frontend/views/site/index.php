@@ -14,13 +14,15 @@ $this->title = 'My Yii Application';
         'items' => [
             [
                 'content' => '<img src="http://www.visitalanya.com/wp-content/uploads/2016/01/dentalcare-in-alanya.jpg"/>',
-                'caption' => '<h1>I know, it is ugly...</h1><p>I have no ideea about beautiful, except me</p>',
+                'caption' => '<h1>There are two ways to write error-free programs; only the third one works.</h1>
+                <p>Deleted code is debugged code</p>',
                 'options' => [
                     'style' => 'max-height: 400px;'
                 ],
             ], [
                 'content' => '<img src="http://www.dentalloungeuae.com/ressources/images/9a8a1ed20426.jpeg"/>',
-                'caption' => '<h2>This is ugly too</h2><p>But me either</p>',
+                'caption' => '<h2>The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.</h2>
+                <p>Software undergoes beta testing shortly before it’s released. Beta is Latin for “still doesn’t work. </p>',
                 'options' => [
                     'style' => 'max-height: 400px'
                 ],
