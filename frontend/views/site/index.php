@@ -6,46 +6,31 @@ use yii\bootstrap\Carousel;
 
 $this->title = 'My Yii Application';
 ?>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700,300' rel='stylesheet' type='text/css'>
-<link
-    href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic'
-    rel='stylesheet' type='text/css'>
 <link href="https://file.myfontastic.com/oAnRr49LRSuj7cYjEYP7b9/icons.css" rel="stylesheet">
 
-<!-- Navigation -->
-
-<!-- Hero section -->
-<div class="container-fluid hero-container">
-
-    <!--    <div class="container">-->
-    <!--        <div class="row hero-row">-->
-    <!---->
-    <!--            <div class="col-md-6 hero-text">-->
-    <!--                <h1 class="hero-title">Bine ati vanit la Clinica...</h1>-->
-    <!---->
-    <!--                <h3 class="hero-under-title">Aici va fi o descriere a clinicii</h3>-->
-    <!--                <button type="button" class="btn btn-lg btn-hero">Citeste mai mult</button>-->
-    <!--                <button type="button" class="btn btn-lg btn-hero">Servicii oferite</button>-->
-    <!--            </div>-->
-    <!---->
-    <!--            <div class="col-md-6">-->
-    <!--                <img class="hero-image" src="http://www.pngmart.com/files/3/White-Teeth-PNG-Clipart.png">-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
+<div class="bannerHomePage">
     <?php
-    $images = ['<img src="http://www.pngmart.com/files/3/White-Teeth-PNG-Clipart.png"/>',
-        '<img src="http://www.pngmart.com/files/3/White-Teeth-PNG-Clipart.png"/>',
-        '<img src="http://www.pngmart.com/files/3/White-Teeth-PNG-Clipart.png"/>'];
-    echo yii\bootstrap\Carousel::widget(['items' => $images]);
+    echo Carousel::widget([
+        'items' => [
+            [
+                'content' => '<img src="http://www.visitalanya.com/wp-content/uploads/2016/01/dentalcare-in-alanya.jpg"/>',
+                'caption' => '<h1>I know, it is ugly...</h1><p>I have no ideea about beautiful, except me</p>',
+                'options' => [
+                    'style' => 'max-height: 400px;'
+                ],
+            ], [
+                'content' => '<img src="http://www.dentalloungeuae.com/ressources/images/9a8a1ed20426.jpeg"/>',
+                'caption' => '<h2>This is ugly too</h2><p>But me either</p>',
+                'options' => [
+                    'style' => 'max-height: 400px'
+                ],
+            ],
+        ]
+    ]);
     ?>
-
-
+    <!--    <img class="responsiveImage" src="http://www.visitalanya.com/wp-content/uploads/2016/01/dentalcare-in-alanya.jpg"/>-->
 </div>
-<!-- Hero section -->
 
-<!-- Services section -->
 
 <div class="container services">
 

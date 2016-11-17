@@ -4,13 +4,108 @@
 
 use yii\helpers\Html;
 
-$this->title = 'About';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Cine suntem:';
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="site-about">
+        <h1><?= Html::encode($this->title) ?></h1>
+    </div>
+    <div class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <article class="material-card Blue">
+            <h2>
+                <span>Dr. Teodor GEORGESCU</span>
+                <strong>
+                    <i class="fa fa-fw fa-star"></i>
+                </strong>
+            </h2>
 
-    <p>This is the About page. You may modify the following file to customize its content:</p>
+            <div class="mc-content">
+                <div class="img-container">
+                    <img class="img-responsive"
+                         src="http://www.parodontologie.ro/files/echipa/10511495_673568502721673_1721636451242847073_o.jpg">
+                </div>
+                <div class="mc-description">
+                    Doctorul Teodor GEORGESCU are o experiență profesională remarcabilă, de peste 40 de ani. Acesta este
+                    doctor în științe medicale și șef de disciplină la Facultatea „Titu Maiorescu”.
 
-    <code><?= __FILE__ ?></code>
-</div>
+                    Totodată, este inventatorul unei metode de tratament al parodontopatiilor marginale cronice și autor
+                    a diverse studii de specialitate.
+                </div>
+            </div>
+            <a class="mc-btn-action">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <div class="mc-footer">
+                <button type="button" class="btn btn-lg btn-hero" style="margin-top: 3px;">Publicații</button>
+
+            </div>
+        </article>
+    </div>
+
+
+    <div class=" col-md-4 col-sm-6 col-xs-12">
+        <article class="material-card Blue">
+            <h2>
+                <span>Dr. Carmen GEORGESCU</span>
+                <strong>
+                    <i class="fa fa-fw fa-star"></i>
+                </strong>
+            </h2>
+
+            <div class="mc-content">
+                <div class="img-container">
+                    <img class="img-responsive"
+                         src="http://www.parodontologie.ro/images/carmen_georgescu.jpg">
+                </div>
+                <div class="mc-description">
+                    Doctor Carmen Georgescu este unul din cei mai buni stomatologi de la noi din țară. Datorită
+                    experienței profesionale vaste, dar și a personalității carismatice, aceasta a fost invitată în
+                    repetate rânduri în cadrul unor emisiuni televizate precum „Neața cu Răzvan și Dani”. De asemenea,
+                    este co-autoarea mai multor studii de specialitate.
+                </div>
+            </div>
+            <a class="mc-btn-action">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <div class="mc-footer">
+
+            </div>
+        </article>
+    </div>
+    </div>
+<?php
+$this->registerJS('
+$(function() {
+        $(".material-card >.mc-btn-action").click(function () {
+            var card = $(this).parent(".material-card");
+            var icon = $(this).children("i");
+            icon.addClass("fa-spin-fast");
+
+            if (card.hasClass("mc-active")) {
+                card.removeClass("mc-active");
+
+                window.setTimeout(function() {
+                    icon
+                        .removeClass("fa-arrow-left")
+                        .removeClass("fa-spin-fast")
+                        .addClass("fa-bars");
+
+                }, 800);
+            } else {
+                card.addClass("mc-active");
+
+                window.setTimeout(function() {
+                    icon
+                        .removeClass("fa-bars")
+                        .removeClass("fa-spin-fast")
+                        .addClass("fa-arrow-left");
+
+                }, 800);
+            }
+        });
+    });
+');
