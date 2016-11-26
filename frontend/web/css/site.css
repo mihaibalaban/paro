@@ -482,18 +482,18 @@ input[type="text"]:focus {
     transition: all 1.4s;
 }
 .material-card .mc-footer a {
-    display: block;
-    float: left;
-    position: relative;
-    width: 52px;
-    height: 52px;
-    margin-left: 5px;
-    margin-bottom: 15px;
-    font-size: 28px;
-    color: #fff;
-    line-height: 52px;
-    text-decoration: none;
-    top: 200px;
+    /*display: block;*/
+    /*float: left;*/
+    /*position: relative;*/
+    /*width: 52px;*/
+    /*height: 52px;*/
+    /*margin-left: 5px;*/
+    /*margin-bottom: 15px;*/
+    /*font-size: 28px;*/
+    /*color: #fff;*/
+    /*line-height: 52px;*/
+    /*text-decoration: none;*/
+    /*top: 200px;*/
 }
 .material-card .mc-footer a:nth-child(1) {
     -webkit-transition: all 0.5s;
@@ -921,7 +921,7 @@ input[type="text"]:focus {
     color: #0d47a1;
 }
 .material-card.Blue .mc-footer a {
-    background-color: #0d47a1;
+    /*background-color: #0d47a1;*/
 }
 .material-card.Blue.mc-active .mc-content {
     background-color: #e3f2fd;
@@ -1545,7 +1545,7 @@ input[type="text"]:focus {
     color: #263238;
 }
 .material-card.Blue-Grey .mc-footer a {
-    background-color: #263238;
+    /*background-color: #263238;*/
 }
 .material-card.Blue-Grey.mc-active .mc-content {
     background-color: #eceff1;
@@ -1563,4 +1563,158 @@ input[type="text"]:focus {
     /*font-weight: 300;*/
     /*font-size: 16px;*/
 /*}*/
+.gradient1{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+59,000000+59&0+0,0.41+0 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.41) 0%, rgba(0,0,0,0.41) 59%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.41) 0%,rgba(0,0,0,0.41) 59%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.41) 0%,rgba(0,0,0,0.41) 59%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69000000', endColorstr='#69000000',GradientType=0 ); /* IE6-9 */
 
+}
+#container {
+    margin-left: 360px;
+}
+#content {
+    max-width: 36rem;
+    min-width: 22rem;
+    font-size: 1rem;
+    padding: 0 4rem 0;
+    margin: auto;
+}
+#content a {
+    color: #666;
+    text-decoration: none;
+    background: #ffffeb;
+    padding: 0 0.2rem;
+}
+#content a:hover {
+    background: #e94e77;
+    color: #ffffe5;
+}
+#content .fa-rss {
+    float: right;
+    font-size: 2rem;
+    opacity: 0.2;
+    position: relative;
+    top: 1.7rem;
+}
+#content .fa-rss:hover {
+    opacity: 1;
+    color: #e94e77;
+    cursor: pointer;
+}
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 360px;
+    background: #2196f3;
+    box-shadow: 1px 0 1px rgba(0,0,0,0.4);
+}
+.profile-image-container {
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #33666d;
+}
+.profile-image-container:hover .profile-name {
+    color: #ffc;
+    /*color: rgba(225,239,241,0.6);*/
+}
+.profile-image-container:hover .profile-image-bg {
+    max-width: 100%;
+    top: 0;
+}
+.profile-name {
+    position: absolute;
+    color: rgba(225,239,241,0.6);
+    color: #ffc;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    z-index: 1;
+    letter-spacing: 0.06rem;
+    top: 0;
+    height: 100%;
+    bottom: 0em;
+    left: 0;
+    right: 0;
+    margin: 0;
+    line-height: 1;
+    font-weight: 300;
+    padding: 280px 1.4em 0;
+    font-size: 1.4rem;
+    /*background: rgba(67,134,144,0.5);*/
+}
+.profile-name .fa.fa-star-o {
+    float: right;
+    position: relative;
+    top: -1px;
+}
+.profile-name .fa.fa-star-o:hover {
+    cursor: pointer;
+    color: #e94e77;
+}
+.profile-meta {
+    color: rgba(225,239,241,0.96);
+    letter-spacing: 0.03rem;
+    padding: 1.2rem 2rem;
+    line-height: 1.6;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+.profile-meta ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.profile-meta ul li {
+    margin-bottom: 0.75rem;
+}
+.profile-meta ul li .fa {
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.profile-meta h3 {
+    margin-bottom: 0;
+    line-height: 1;
+    font-weight: 400;
+}
+.profile-meta .section-heading {
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+.profile-image-bg {
+    position: absolute;
+    max-width: 100%;
+}
+.page-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 1rem;
+}
+.post-snippet {
+    margin-bottom: 4rem;
+}
+.post-snippet .timestamp {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    opacity: 0.5;
+}
+.post-snippet .title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+.post-snippet p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}

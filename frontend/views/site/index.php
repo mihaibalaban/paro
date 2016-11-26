@@ -14,15 +14,29 @@ $this->title = 'My Yii Application';
         'items' => [
             [
                 'content' => '<img src="http://www.visitalanya.com/wp-content/uploads/2016/01/dentalcare-in-alanya.jpg"/>',
-                'caption' => '<h1>There are two ways to write error-free programs; only the third one works.</h1>
-                <p>Deleted code is debugged code</p>',
+                'caption' => '
+<div class="gradient1">
+<h2>Parodontoză?</h2>
+                <p>În lipsa vaccinului stafilococic, parodontoza poate fi tratată acum cu ajutorul unui vaccin polimicrobian din străinătate, care conține o doză mare de stafilococ.</p>
+                </div>',
+
+
                 'options' => [
                     'style' => 'max-height: 400px;'
                 ],
             ], [
                 'content' => '<img src="http://www.dentalloungeuae.com/ressources/images/9a8a1ed20426.jpeg"/>',
-                'caption' => '<h2>The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.</h2>
-                <p>Software undergoes beta testing shortly before it’s released. Beta is Latin for “still doesn’t work. </p>',
+                'caption' => '
+<div class="row gradient1">
+<div class="col-lg-6" >
+<h2>The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.</h2>
+                <p>Software undergoes beta testing shortly before it’s released. Beta is Latin for “still doesn’t work. </p>
+                </div>
+                 <div class="col-lg-6">
+    <img src="../images/borderparo.png"/>
+        </div>
+</div>'
+,
                 'options' => [
                     'style' => 'max-height: 400px'
                 ],
